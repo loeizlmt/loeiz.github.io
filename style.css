@@ -114,8 +114,8 @@ a:active{
     .svg-menu{
         position: relative;
         z-index: 11;
-        left: 10px;
-        top: 15px;
+        left: 5px;
+        top: 10px;
 
     }
     .afficher-menu{ 
@@ -129,7 +129,9 @@ a:active{
     }
     #afficher-menu:checked ~ .menu{ 
         transition: all 0.5s ease;
-        transform: translateX(-100%);}
+        transform: translateX(-100%);
+        box-shadow: none;
+    }
     
     .midjourney-img{
             width: 30%;
@@ -186,7 +188,7 @@ a:active{
         position: relative;
         z-index: 11;
         top: 30px;
-        left: 10px;
+        left: 8px;
     }
     .afficher-menu{ 
         z-index: 101;
