@@ -5,12 +5,15 @@ body {
 #page1{
     display: none;
 }
+/* quand l'id de la première iframe est ciblé dans l'url, on l'affiche avec une animation */
 #page1:target {
     display: block;
     position: fixed;
     animation: zoom 0.7s ;
 
 }
+
+/* permet de créer une animation de zoom */
 @keyframes zoom{
     from {
         transform: scale(0.3);
@@ -56,6 +59,7 @@ body {
     animation: zoom 0.7s ;
 
 }
+/* : hover permet de changer les propriétés d'un élément au survol de la souris */
 li:hover{
     transform: translateY(-2px);
     transition: all 0.5s ease;
@@ -68,6 +72,7 @@ a:hover{
 a:active{
     color: purple;
 }    
+/* les media queries permettent de mettre des propriétés css différentes en fonction de la taille de l'écran ce qui permet le responsive */	
 @media screen and (min-width: 1024px) {
     .menu{
         width: 14%;
@@ -98,6 +103,7 @@ a:active{
         position: relative;
         font-size: 2rem;
     }
+    /* change la place de l'iframe dans la page quand le menu est fermé (checkbox cochée) */
     #afficher-menu:checked ~ iframe{    
         left: 2%;
         border: none;
@@ -127,6 +133,7 @@ a:active{
         left: 10px;
         top: 22px
     }
+    /* rentre le menu dans la page quand la checkbox est cochée */
     #afficher-menu:checked ~ .menu{ 
         transition: all 0.5s ease;
         transform: translateX(-100%);
@@ -143,7 +150,7 @@ a:active{
 }
 @media screen and (min-width: 0px) and (max-width: 1024px)
 {
-
+    /* ici on rentre le menu quand la checkbox n'est pas cochée pour qu'il ne s'affiche pas sur un écran petit */
     .menu{
         width: 27%;
         background-color: #0000ff;
