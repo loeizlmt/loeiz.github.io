@@ -27,7 +27,7 @@ Ce projet est un site web simple respectant un ensemble de consignes visant à d
 2. **Lancement du site :**
    - Ouvrez le fichier `index.html` dans un navigateur.  
    - Cliquez sur un élément du menu pour charger dynamiquement le contenu correspondant dans l’iframe.
-   - Vous pouvez aussi passer par cette [url]((https://loeizlmt.github.io/loeiz.github.io)
+   - Vous pouvez aussi passer par cette [url](https://loeizlmt.github.io/loeiz.github.io)
 3. **Tester la responsivité :**
    - Redimensionnez la fenêtre de votre navigateur pour voir comment le site s’adapte.  
    - Vous pouvez aussi utiliser l’outil de simulation de votre navigateur (`F12` > Inspecter > Mode responsive).
