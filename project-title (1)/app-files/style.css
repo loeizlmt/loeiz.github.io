@@ -89,6 +89,7 @@ body.multiple-scenes.mobile #titleBar {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  display: none;
 }
 
 .mobile #titleBar .sceneName {
@@ -146,7 +147,7 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 #autorotateToggle {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -155,6 +156,7 @@ body.fullscreen-enabled #fullscreenToggle {
   padding: 5px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
+  display: none;
 }
 
 .mobile #autorotateToggle {
@@ -276,7 +278,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   width: 100%;
   background-color: rgb(58,68,84);
   background-color: rgba(58,68,84,0.8);
-  display: none;
 }
 
 .mobile #sceneList {
