@@ -147,7 +147,7 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 #autorotateToggle {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -156,7 +156,6 @@ body.fullscreen-enabled #fullscreenToggle {
   padding: 5px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
-  display: none;
 }
 
 .mobile #autorotateToggle {
