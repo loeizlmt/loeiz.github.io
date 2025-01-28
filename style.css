@@ -105,17 +105,19 @@ a:active{
     }
     /* change la place de l'iframe dans la page quand le menu est fermé (checkbox cochée) */
     #afficher-menu:checked ~ iframe{    
-        left: 2%;
+        left: 0;
         border: none;
         width: 100%;
         height: 100%;
     }
     iframe{
-        left: 16%;
+        left: 14%;
         border: none;
-        width: 100%;
+        width: 88%;
         height: 100%;
         transition: all 0.5s ease;
+        top: -1%;
+        position: relative;
     }
     .svg-menu{
         position: relative;
@@ -183,11 +185,12 @@ a:active{
         top: -13px;
     }
     iframe{    
-        left: 2%;
+        left: 0;
         border: none;
         width: 100%;
         height: 100%;
         transition: all 0.5s ease;
+        top: -1%;
 
     }
 
@@ -222,11 +225,12 @@ a:active{
         box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.5);
     }
     #afficher-menu:checked ~ iframe{ 
-        left: 29%;
+        left: 0;
         border: none;
         width: 100%;
         height: 100%;
         transition: all 0.5s ease;
+
     }
     .titre-pages{
         font-size: 3rem;
