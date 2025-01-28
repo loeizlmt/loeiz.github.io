@@ -24,14 +24,14 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
+        "yaw": 1.0109103332675424,
+        "pitch": 0.3652140090080138,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.9143225795051695,
-          "pitch": 0.15985706852487702,
+          "yaw": 0.9143225716036127,
+          "pitch": 0.15985705416322027,
           "rotation": 0,
           "target": "4-bat_e_2_"
         }
@@ -188,13 +188,20 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.4195003778454538,
-          "pitch": 0.234539108462668,
+          "yaw": -0.4195003869639429,
+          "pitch": 0.23453913273105442,
           "rotation": 1.5707963267948966,
-          "target": "0-bat_e_"
+          "target": "1-bat_e_5_"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -1.4026970447501537,
+          "pitch": 0.24804705160406293,
+          "title": "ascenseur",
+          "text": "<div><br></div>"
+        }
+      ]
     }
   ],
   "name": "Project Title",
