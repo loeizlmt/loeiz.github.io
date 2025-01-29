@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
     <head><title>page 3</title>
-        <link rel="stylesheet" type="text/css" href="style.css"></head>
-    <body>
-        <h1 class="titre-pages">Voici la page 3</h1>
-        <p class="paragraphe-pages">Vous êtes sur la page 3</p>
-        <img class="midjourney-img" src="https://cdn.midjourney.com/3ffdd625-41ea-4981-8717-3e7cc893a45e/0_0.jpeg" >
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    </head>
+    <body style="height: 100%;">
+
+        <div id="map" class="map">
+            <script>
+            var map = L.map('map').setView([48.000, 4.09], 5);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}           ).addTo(map);
+            var marker = L.marker([48.249607, 7.346047]).addTo(map);
+            marker.bindPopup('<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/fr/embed/AaaCSRj5ie"></iframe>')
+
+            
+            </script>
+        </div>
     </body>
 </html>
