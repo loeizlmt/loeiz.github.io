@@ -87,6 +87,11 @@ a:active{
 }    
 /* les media queries permettent de mettre des propriétés css différentes en fonction de la taille de l'écran ce qui permet le responsive */	
 @media screen and (min-width: 1024px) {
+    .leaflet-popup-content {
+        width: 400px !important;
+        height: 250px !important;
+        margin-left: -8% !important;
+    }
     .menu{
         width: 14%;
         background-color: #6e7b8f;
@@ -165,6 +170,11 @@ a:active{
 }
 @media screen and (min-width: 0px) and (max-width: 1024px)
 {
+    .leaflet-popup-content {
+        width: 400px !important;
+        height: 250px !important;
+        margin-left: -8% !important;
+    }
     /* ici on rentre le menu quand la checkbox n'est pas cochée pour qu'il ne s'affiche pas sur un écran petit */
     .menu{
         width: 27%;
