@@ -76,7 +76,7 @@ a:active{
 @media screen and (min-width: 1024px) {
     .menu{
         width: 14%;
-        background-color: #0000ff;
+        background-color: #6e7b8f;
         color: white;
         top : 0;
         left: 0;
@@ -155,7 +155,7 @@ a:active{
     /* ici on rentre le menu quand la checkbox n'est pas cochée pour qu'il ne s'affiche pas sur un écran petit */
     .menu{
         width: 27%;
-        background-color: #0000ff;
+        background-color: #6e7b8f;
         color: white;
         top : 0;
         left: 0;
