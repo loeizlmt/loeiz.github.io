@@ -1,10 +1,6 @@
-.leaflet-popup-content {
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: -8% !important;
-}
 .leaflet-popup-content-wrapper{
     padding: 1px !important;
+    width: 420px !important;
 }
 
 .map{
@@ -88,9 +84,9 @@ a:active{
 /* les media queries permettent de mettre des propriétés css différentes en fonction de la taille de l'écran ce qui permet le responsive */	
 @media screen and (min-width: 1024px) {
     .leaflet-popup-content {
-        width: 400px !important;
+        width: 450px !important;
         height: 250px !important;
-        margin-left: -8% !important;
+        margin-left: -18.5% !important;
     }
     .menu{
         width: 14%;
@@ -173,7 +169,7 @@ a:active{
     .leaflet-popup-content {
         width: 400px !important;
         height: 250px !important;
-        margin-left: -8% !important;
+        margin-left: 2.7% !important;
     }
     /* ici on rentre le menu quand la checkbox n'est pas cochée pour qu'il ne s'affiche pas sur un écran petit */
     .menu{
