@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
     <head><title>page 4</title>
-        <link rel="stylesheet" type="text/css" href="style.css"></head>
-    <body>
-        <h1 class="titre-pages">Voici la page 4</h1>
-        <p class="paragraphe-pages">Vous êtes sur la page 4</p>
-        <img class="midjourney-img" src="https://cdn.midjourney.com/2338e782-6bb2-419b-a57e-d23cc89c8903/0_2.jpeg" >
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    </head>
+    <body style="height: 100%;">
+        <div class="présentation-plan">
+                <h1>Plan du lycée</h1>
+                <p>Voici le plan du lycée, vous pouvez vous déplacer sur la carte pour voir les différents bâtiments du lycée.</p>
+
+        </div>
+        <div id="map" class="plan-lycée">
+            <script>
+            var map = L.map('map').setView([49.545912, 0.179784], 17);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}           ).addTo(map);
+            var marker = L.marker([49.545912, 0.179784]).addTo(map);
+             marker.bindPopup('<a href="javascript:void(0)" class="scene" data-id="0-ext_1">visiter</a>');
+            </script>
+        </div>
     </body>
 </html>
