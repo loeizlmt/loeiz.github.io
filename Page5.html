@@ -3,8 +3,28 @@
     <head><title>page 5</title>
         <link rel="stylesheet" type="text/css" href="style.css"></head>
     <body>
+    <div class="page5">
+        <div class="présentation-plan" >
         <h1 class="titre-pages">Voici la page 5</h1>
-        <p class="paragraphe-pages">Vous êtes sur la page 5</p>
-        <img class="midjourney-img" src="https://cdn.midjourney.com/5a9948b0-4146-47b1-81d3-5c10ed6e60fd/0_0.jpeg" >
+        <p class="paragraphe-pages">Vous êtes sur la page 5 vous pouvez générer une note sur 20 aléatoire</p>
+
+        <script>
+            var click = 0;
+            function entierAleatoire()
+            {
+                entier = Math.floor(Math.random() * 21);
+                alert("La note sur 20 est : " + entier);
+            }      
+            function buttonCliqué(){
+                click = click + 1;
+                if (click == 6){
+                    alert("les notes générées doivent vraiment être basses pour cliquer autant de fois sur le bouton");
+                    click = 0;
+                }
+            }
+        </script>
+        <button class="button-note" onclick="entierAleatoire() , buttonCliqué()" >générer</button>
+    </div>
+</div>
     </body>
 </html>
