@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+        window.location = "index.html#accueil";
+        </script>
         <meta name="google-site-verification" content="0Y66oeRGAEYPo4vcGEEcwDpuytmu3-V4OUH3ExOYb2k" />
         <title>Accueil</title>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -26,14 +29,19 @@
         <div class="menu">
             <ul>
                 <h2 class="titre-menu">Menu</h2>
+                <h3 class="home"><a href="#accueil">🏡 accueil</a></h3>
                 <li class="pages"><a href="#page1">visite 1 📷🗺️</a></li>
                 <li class="pages"><a href="#page2">visite 2 📷🗺️</a></li>
-                <li class="pages"><a href="#page3">carte 🗺️</a></li>
                 <li class="pages"><a href="#page4">plan 🗺️</a></li>
+                <li class="pages"><a href="#page3">carte 🗺️</a></li>
                 <li class="pages"><a href="#page5">page 5 📃</a></li>
             </ul>
         </div>
+
+
 <!-- iframes pour afficher les pages -->
+ <iframe src="accueil.html" id="accueil" frameborder="0"></iframe>
+ 
 <iframe id="page1"
 src="project-title\app-files\index.html">
 </iframe>
@@ -54,6 +62,6 @@ src="Page4.html">
 src="Page5.html">
 </iframe>
 
-
+<footer><p>&copy; 2025 Loeiz. All rights reserved. | Designed by Loeiz</p></footer>
     </body>
 </html>

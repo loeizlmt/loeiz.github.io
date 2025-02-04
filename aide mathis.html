@@ -1,0 +1,25 @@
+<!doctype html> 
+
+<ul><!-- <ul> pour créer une liste et <li> c'est un élément de la liste -->
+    <li><a href="#page1">page 1 </a></li> <!-- ici on crée un lien avec <a>. Dans href on met #page1 pour que quand on clique sur le -->
+                                        <!-- lien ça affiche #page1 dans l'url-->
+        <li><a href="#page2">youtube </a></li> <!-- ici on fait un exemple concret pour afficher une vidéo youtube -->
+    </ul> 
+
+<iframe id="page1" src="page1.html" ></iframe> <!-- ici on crée un iframe avec id="page1" (id permet de l'identifier) et src="page1.html" pour afficher la page1.html -->
+<iframe id="page2" src="https://www.youtube.com/embed/oF697Q6T30I" ></iframe> <!-- ici on crée un iframe avec id="page2" et src="https://www.youtube.com/embed/oF697Q6T30I" pour afficher une vidéo youtube -->
+
+<style>
+    #page1 { /* ici on utilise l'id de l'iframe changer son style, display veut dire afficher et none c'est non, ducoup on la voit pas  */
+        display: none;
+    }
+    #page1:target { /* ici on utilise le :target pour afficher l'iframe (display: block) quand dans l'url il y a écrit #page1 d'où le #page1 dans le href */
+        display: block;
+    }
+    #page2 { /* ici on utilise l'id de l'iframe changer son style, display veut dire afficher et none c'est non, ducoup on la voit pas  */
+        display: none;
+    }
+    #page2:target { /* ici on utilise le :target pour afficher l'iframe (display: block) quand dans l'url il y a écrit #page2 d'où le #page2 dans le href */
+        display: block;
+    }
+</style>
