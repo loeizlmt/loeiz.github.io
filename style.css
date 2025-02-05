@@ -62,7 +62,7 @@ footer{
 }
 .map{
     position: static;
-    height: 100% !important;
+    height: 100% !important; /* le !important permet de forcer le css pour passer outre le style de leaflet */
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -228,14 +228,6 @@ a:active{
         transform: translateX(-100%);
         box-shadow:none;
     }
-    
-    .midjourney-img{
-            width: 30%;
-            height:30%;
-            position: relative;
-            border-radius: 10px;
-            box-shadow: 7px 8px 10px rgba(0, 0, 0, 0.5);
-        }
 }
 @media screen and (min-width: 0px) and (max-width: 1024px)
 {
@@ -330,11 +322,21 @@ a:active{
     .paragraphe-pages{
         font-size: 2.5rem;
     }
-    .midjourney-img{
-        width: 50%;
-        height:50%;
-        position: relative;
-        border-radius: 10px;
-        box-shadow: 7px 8px 10px rgba(0, 0, 0, 0.5);
+    .paragraphe-accueil{
+        font-size: 2.5rem;
+    }
+    .body-acceuil{
+        top: 10% !important;
+        background-position-y: 60% !important;
+        background-size: 150%;
+        background-position-x:50% ;
+    }
+    footer{
+        height: 5%;
+        font-size: 2rem;
+    }
+    .home{
+        font-size: 2.7rem;
+        margin-left: -10px;
     }
 }
