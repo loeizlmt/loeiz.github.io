@@ -262,15 +262,15 @@ a:active{
         box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.5);
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1190px){
     .leaflet-popup-content {
-        width: 400px !important;
+        width: 450px !important;
         height: 250px !important;
-        margin-left: 2.7% !important;
+        margin-left: -18.5% !important;
     }
-    /* ici on rentre le menu quand la checkbox n'est pas cochée pour qu'il ne s'affiche pas sur un écran petit */
     .menu{
-        width: 27%;
+        width: 14%;
+        background-color: #6e7b8f;
         background-color: #6e7b8f;
         color: white;
         top : 0;
@@ -278,9 +278,8 @@ a:active{
         position: fixed;
         z-index: 10;
         height: 100%;
-        transition: all 0.5s ease;
-        transform: translateX(-100%); 
-        box-shadow: none;
+        transition: all 0.5s ease;   
+        box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.5);     
     }
     a {
         color: white;
@@ -288,33 +287,50 @@ a:active{
         position: relative;
     }
     li{
-        padding: 5%;
-        font-size: 3rem;
+        padding: 4%;
+        font-size: 1.9rem;
         position: relative;
-        left: 5%;
+        left: 7%;
     
     }
-    .titre-menu{
-        left: 15%;
-        position: relative;
-        font-size: 3.3rem;
-        top: -13px;
+    .home{
+        font-size: 1.9rem;
+        margin-left: -10px;
     }
-    iframe{    
+    .titre-menu{
+        left: 18%;
+        position: relative;
+        font-size: 2rem;
+        top:-10px;
+        top:-10px;
+    }
+    /* change la place de l'iframe dans la page quand le menu est fermé (checkbox cochée) */
+    #afficher-menu:checked ~ iframe{    
+        left: 0;
         left: 0;
         border: none;
         width: 100%;
         height: 100%;
+    }
+    iframe{
+        left: 14%;
+        left: 14%;
+        border: none;
+        width: 86%;
+        width: 86%;
+        height: 100%;
         transition: all 0.5s ease;
         top: -1%;
-
+        position: relative;
+        top: -1%;
+        position: relative;
     }
-
     .svg-menu{
         position: relative;
         z-index: 11;
-        top: 30px;
-        left: 8px;
+        left: 5px;
+        top: 10px;
+
     }
     .afficher-menu{ 
         z-index: 101;
@@ -323,68 +339,21 @@ a:active{
         height: 40px;
         opacity: 0;
         left: 10px;
-        top: 22px;
-    }  
+        top: 22px
+    }
+    /* rentre le menu dans la page quand la checkbox est cochée */
     #afficher-menu:checked ~ .menu{ 
         transition: all 0.5s ease;
-        transform: translateX(+0%);
-        box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-    #afficher-menu:checked ~ iframe{ 
-        left: 0;
-        border: none;
-        width: 100%;
-        height: 100%;
-        transition: all 0.5s ease;
-
-    }
-    .titre-pages{
-        font-size: 3rem;
-    }
-    .paragraphe-pages{
-        font-size: 2.5rem;
-    }
-    .paragraphe-accueil{
-        font-size: 2.5rem;
-    }
-    .body-acceuil{
-        top: 10% !important;
-        background-position-y: 45% !important;
-        background-size: 150%;
-        background-position-x:50% ;
-    }
-    footer{
-        height: 5%;
-        font-size: 2rem;
-    }
-    .home{
-        font-size: 2.7rem;
-        margin-left: -10px;
-    }
-    .button-note{
-        width: 300px;
-        height: 60px !important;
-        font-size: 1.7rem;
-        box-shadow: 3px 7px 9px 4px rgba(0, 0, 0, 0.5);
-
-    }
-    .page5{
-
-        top: 10%;
+        transform: translateX(-100%);
+        box-shadow:none;
     }
     .illustration-générateur-notes{
         border-radius: 10px;
-        width: 60%;
+        width: 30%;
         position: absolute;
-        top: 25%;
-        left: 20%;
+        top: 22%;
+        left: 35%;
         box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.5);
-    }
-    .qr-code{
-        display: none;
-    }
-    .paragraphe-qr-code{
-        display: none;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 767px){
