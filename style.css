@@ -262,7 +262,8 @@ a:active{
         box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.5);
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024){
+/*/ ça sa bug donc on le répara plus tard
+@media screen and (min-width: 769px) and (max-width: 1024px){
     .leaflet-popup-content {
         width: 450px !important;
         height: 250px !important;
@@ -304,7 +305,7 @@ a:active{
         top:-10px;
         top:-10px;
     }
-    /* change la place de l'iframe dans la page quand le menu est fermé (checkbox cochée) */
+    /* change la place de l'iframe dans la page quand le menu est fermé (checkbox cochée) *//*
     #afficher-menu:checked ~ iframe{    
         left: 0;
         left: 0;
@@ -341,7 +342,7 @@ a:active{
         left: 10px;
         top: 22px
     }
-    /* rentre le menu dans la page quand la checkbox est cochée */
+    /* rentre le menu dans la page quand la checkbox est cochée *//*
     #afficher-menu:checked ~ .menu{ 
         transition: all 0.5s ease;
         transform: translateX(-100%);
@@ -355,8 +356,8 @@ a:active{
         left: 35%;
         box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.5);
     }
-}
-@media screen and (min-width: 0px) and (max-width: 767px){
+}*/
+@media screen and (min-width: 0px) and (max-width: 1024px){
     .leaflet-popup-content {
         width: 400px !important;
         height: 250px !important;
@@ -365,7 +366,6 @@ a:active{
     /* ici on rentre le menu quand la checkbox n'est pas cochée pour qu'il ne s'affiche pas sur un écran petit */
     .menu{
         width: 27%;
-        background-color: #6e7b8f;
         background-color: #6e7b8f;
         color: white;
         top : 0;
