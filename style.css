@@ -75,10 +75,6 @@ footer{
     position: static;
     height: 100% !important; /* le !important permet de forcer le css pour passer outre le style de leaflet */
 }
-body{
-    background-color: #f5f5f5;
-        font-family:cursive;
-}
 .page5{
     background-color: white;
     height: 100%;
